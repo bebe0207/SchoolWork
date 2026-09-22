@@ -1,0 +1,23 @@
+{
+  "name": "schoolwork",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/bebe0207/SchoolWork#readme",
+  "bugs": {
+    "url": "https://github.com/bebe0207/SchoolWork/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bebe0207/SchoolWork.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "test copy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
