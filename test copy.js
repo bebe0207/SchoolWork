@@ -1,23 +1,29 @@
 var readline = require("readline-sync");
 
-var weight = Number(readline.question("your weight?(kg)1-200:"));
-var height = Number(readline.question("your height(cm)1-250:"));
+var weight;
+var height;
 
-if (
-    !Number.isFinite(weight) ||
-    !Number.isFinite(height) ||
-    weight < 1 || weight > 200 ||
-    height < 1 || height > 250
-) {
-    console.log("Please enter a valid weight and height.");
-} else {
-    var bmi = weight / ((height / 100) ** 2);
-    console.log("Your BMI: " + bmi.toFixed(2));
+while (true) {
+    weight = Number(readline.question("Your weight (10~200 kg)? "));
+
+    if (!Number.isFinite(weight) || weight < 10 || weight > 200) {
+        console.log("Please enter a number from 10 to 200 kg.");
+        continue;
+    } else {
+        break;
+    }
 }
 
-//function test(weight=70){
-//    var weight=50;
-//    console.log("weight="+weight)
-//    return weight; }
-//var result=test(90);
-//console.log("weight="+weight)
+while (true) {
+    height = Number(readline.question("Your height (80~220 cm)? "));
+
+    if (!Number.isFinite(height) || height < 80 || height > 220) {
+        console.log("Please enter a number from 80 to 220 cm.");
+        continue;
+    } else {
+        break;
+    }
+}
+
+var bmi = weight / ((height / 100) ** 2);
+console.log("Your BMI: " + bmi.toFixed(2));
