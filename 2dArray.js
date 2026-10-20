@@ -12,6 +12,7 @@ for (let row = 0; row < M; row++){
     for (let col = 0; col < N; col++){
         newAry[row].push(row**col);
     }
+    
 }
 
 console.log("newAry="+JSON.stringify(newAry));
