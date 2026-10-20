@@ -17,14 +17,24 @@ function average(s){
         sum+=s[i];
     }
     avg=sum/s.length;
+    s[0]=100;
     return avg;
 }
 
 var ary=[];
 var num = 5;
-var readline = require('readline-sync');
+var readline = require("readline-sync");
 for (let i=0; i<num; i++){
-    ary[i]=parseInt(readline.question("Enter a number: "));
+    ary[i]=readline.questionFloat("Input grade: "+ i);
 }
 
 console.log("Average="+average(ary));
+
+function add(a, b){
+    
+    a=70,b=80;
+    return a+b;
+}
+
+var x=50,y=60;
+console.log("Sum="+add(x,y));
