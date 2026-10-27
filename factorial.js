@@ -16,5 +16,6 @@ function recfact(n){
         return n*recfact(n-1);
 }
 
+
 console.log("10!="+fact(n));
 console.log("10!="+recfact(n));
